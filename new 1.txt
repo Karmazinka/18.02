@@ -1,0 +1,334 @@
+
+гк@PC7-CAB3 MINGW64 ~
+$ git config --global user.name Karmazinka
+
+гк@PC7-CAB3 MINGW64 ~
+$ git config --global user.email anik.karmazik@gmail.com
+
+гк@PC7-CAB3 MINGW64 ~
+$ pwd
+/c/Users/гк
+
+гк@PC7-CAB3 MINGW64 ~
+$ cd D:/гк/18.02
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02
+$ pwd
+/d/гк/18.02
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02
+$ git init
+Initialized empty Git repository in D:/гк/18.02/.git/
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git add .
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ commit -m "v.1.0"
+bash: commit: command not found
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git commit -m "v.1.0"
+[master (root-commit) 59af5ae] v.1.0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git remote add origin https://github.com/Karmazinka/18.02
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git push -uorigin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git remote add master https://github.com/Karmazinka/18.02
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git push -u master
+remote: Permission to Karmazinka/18.02.git denied to Sslavkad.
+fatal: unable to access 'https://github.com/Karmazinka/18.02/': The requested URL returned error: 403
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git remote add master https://github.com/Karmazinka/18.02.git
+error: remote master already exists.
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git ls-files
+file.txt
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git k
+git: 'k' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        fsck
+        gc
+        mv
+        p4
+        rm
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ gitk
+ gitk
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git remote add master https://github.com/Karmazinka/18.02.g
+error: remote master already exists.
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git remote add master https://github.com/Karmazinka/18.02.g gitk
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git add file.txt
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git commit -m "C0"
+[master d4513e2] C0
+ 1 file changed, 1 insertion(+)
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git log
+commit d4513e25eaec809aabf8e04845021cdb61db8134 (HEAD -> master)
+Author: Karmazinka <anik.karmazik@gmail.com>
+Date:   Fri Feb 18 19:30:58 2022 +0300
+
+    C0
+
+commit 59af5aeb5a1b71873606a3919e540b42ebbe5062
+Author: Karmazinka <anik.karmazik@gmail.com>
+Date:   Fri Feb 18 18:59:46 2022 +0300
+
+    v.1.0
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git shortlog
+Karmazinka (2):
+      v.1.0
+      C0
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git commit -m "C1"
+On branch master
+nothing to commit, working tree clean
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git commit -m "C1"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git add .
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git commit -m "C1"
+[master badf593] C1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git log
+commit badf5934706d9558c1851f59f910b09f1bc096db (HEAD -> master)
+Author: Karmazinka <anik.karmazik@gmail.com>
+Date:   Fri Feb 18 19:45:35 2022 +0300
+
+    C1
+
+commit d4513e25eaec809aabf8e04845021cdb61db8134
+Author: Karmazinka <anik.karmazik@gmail.com>
+Date:   Fri Feb 18 19:30:58 2022 +0300
+
+    C0
+
+commit 59af5aeb5a1b71873606a3919e540b42ebbe5062
+Author: Karmazinka <anik.karmazik@gmail.com>
+Date:   Fri Feb 18 18:59:46 2022 +0300
+
+    v.1.0
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git shortlog
+Karmazinka (3):
+      v.1.0
+      C0
+      C1
+
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git checkout
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git checkout -b iss1
+Switched to a new branch 'iss1'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (hotfix)
+$ git add .
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (hotfix)
+$ git commit -m "hotfix"
+[hotfix 2d3c7d2] hotfix
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (hotfix)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (hotfix)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git merge hotfix
+Updating badf593..2d3c7d2
+Fast-forward
+ file.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ git branch -d hotfix
+error: The branch 'hotfix' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D hotfix'.
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git branch -d hotfix
+Deleted branch hotfix (was 2d3c7d2).
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ git commit -a -m "iss1"
+[iss1 c38a066] iss1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ git merge iss1
+Auto-merging file.txt
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master|MERGING)
+$ cat file.txt
+<<<<<<< HEAD
+hotfix
+=======
+iss1
+>>>>>>> iss1
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master|MERGING)
+$ git commit -m "v.2.0"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       file.txt
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master|MERGING)
+$ git commit -a -m "v.2.0"
+[master b266e1c] v.2.0
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$ gitk
+
+гк@PC7-CAB3 MINGW64 /d/гк/18.02 (master)
+$
